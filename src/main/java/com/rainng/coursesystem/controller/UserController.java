@@ -20,6 +20,7 @@ public class UserController extends BaseController {
 
     @PostMapping("/login")
     public ResultVO login(@Validated @RequestBody LoginVO loginVO) {
+
         String username = loginVO.getUsername();
         String password = loginVO.getPassword();
         Integer userType = loginVO.getUserType();
